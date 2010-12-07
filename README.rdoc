@@ -1,0 +1,7 @@
+= Imperavi Redactor
+
+This is JavaScript redactor developed in Imperavi (http://imperavi.ru/redactor)
+
+This is not official sources.
+
+This sources based on version 6.1.1 and includes small bug fix for Ruby on Rails usage.
