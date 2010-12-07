@@ -89,7 +89,11 @@ var twidth;
 				path = '';
 				$("script").each(function(i,s)
 				{
-					if (s.src && s.src.match(/redactor\.js/)) path = s.src.replace(/redactor\.js/, '');
+					if (s.src)
+          {
+            var match_res = s.src.match(/^(.*)redactor\.js(?:\?[^\/]*)?$/);
+            if (match_res) path = match_res[1];
+          } 
 				});
 				this.opts.path = path;
 			}
